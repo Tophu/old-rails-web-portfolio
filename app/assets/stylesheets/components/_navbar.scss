@@ -1,133 +1,134 @@
-.navbar-lewagon {
+nav {
+  position: relative;
+  font-family: 'Roboto',sans-serif;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-toggle {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.nav-toggle:hover {
+  color: #777;
+}
+nav header {
+  position: relative;
+  display: flex;
   justify-content: space-between;
-  background: white;
+  background-color: #333;
+  color: #fff;
+  height: 60px;
+  padding: 0 2rem;
+  box-shadow: 0 2px 10px #333;
+  margin: 0 0 8rem 0;
+}
+nav header i {
+  line-height: 60px!important;
+}
+#nav-brand {
+  margin-left: 1rem;
+  line-height: 60px;
+  font-size: 2rem;
+}
+.nav-menu {
+  position: absolute;
+  top: 10px;
+  right: 5%;
+  background-color: #444;
+  border-radius: 30%;
+  transform: translate(10%,0%);
+  transition: all 0.4s;
+  opacity: 0;
+  visibility: hidden;
+}
+.nav-menu-icon {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  cursor: pointer;
+  padding: 0 10px;
+  color: white;
+}
+.nav-menu ul {
+  padding: 5px 0;
+  text-align: left;
+  min-width: 150px;
+}
+.nav-menu li {
+  padding: 0.7em 1em;
+  cursor: pointer;
+  font-weight: normal;
+}
+.nav-menu li:hover {
+  background-color: #333;
+  transition: background-color 0.4s;
+}
+/* Note: always keep z-index of desired element higher than background-fader class*/
+.background-fader {
+  visibility: hidden;
+  width: 100%;
+  position: fixed;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  top: 0;
+  z-index: 9;
+  opacity: 0;
+  transition: opacity 400ms;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.side-navbar {
+  position: fixed;
+  top: 0;
+  // left: 0;
+  right: 0;
+  background-color: rgba(10%, 10%, 10%, 1);
+  color: white;
+  padding-bottom: 1rem;
+  height: 100vh;
+  width: 14%;
+  transform: translate(100%, 0%); /* minus goes left & up, positive goes right and down*/
+  transition: transform 0.4s;
+  z-index: 10;/* this is required so that it stays above navbar wrapper*/
+}
+.side-navbar i {
+  position: relative;
+  left: 80%;
+  cursor: pointer;
+  top: 10px;
+}
+.side-navbar ul {
+  margin-top: 1rem;
+}
+.side-navbar li {
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+}
+.side-navbar li:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+.side-navbar li a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.fade-background {
+  visibility: visible;
+  opacity: 1;
 }
-
-
-// .navbar {
-//   height: 80px;
-//   background-color: transparent;
-//   border: none;
-//   color: white;
-//   z-index: 100;
-//   transition: background-color 1s ease 0s;
-// }
-
-
-// .navbar-default {
-
-//    .navbar-brand {
-//      margin-top: 10px;
-//      color: white;
-
-//       &:hover {
-//          color: #C57ED3;
-//          border: 1px solid #C57ED3;
-//       }
-//    }
-
-//   .navbar-nav {
-
-//     > li {
-
-//       > a {
-//         color: white;
-//         margin: 10px 5px 5px 5px;
-
-//       }
-//       > a:hover, > a:active, > a:focus {
-//         color: #C57ED3;
-//         border: 1px solid #C57ED3;
-//       }
-//       > a:visited {
-//         color: #C57ED3;
-//         text-decoration: none;
-//       }
-
-//     } //end li
-
-//     > .active {
-
-//       > a, > a:hover, > a:focus {
-//         background-color: transparent;
-//         color: #C57ED3;
-//       }
-
-//     }
-
-//   } //end .navbar-nav
-
-//   //Collapsed styles
-//   .navbar-toggle {
-//     border-color: #C57ED3;
-
-//       &:hover, &:focus {
-//         background-color: #490D40;
-//       }
-
-
-
-//       .icon-bar {
-//         color: #C57ED3;
-//         background-color: #C57ED3;
-
-//       }
-//   }
-
-//   .navbar-collapse.collapse.in ul {
-//     background-color: #490D40;
-//   }
-
-// } //end .navbar-default
-
-
-
-// /* Solid class attached on scroll past first section */
-
-// .navbar.solid {
-//   background-color: #490D40;
-//   transition: background-color 1s ease 0s;
-//   box-shadow: 0 0 4px grey;
-
-//     .navbar-brand {
-//       color: #C57ED3;
-//       transition: color 1s ease 0s;
-//     }
-
-//     .navbar-nav {
-
-//        > li {
-
-//           > a {
-//             color: #C57ED3;
-//             transition: color 1s ease 0s;
-//           }
-
-//        } //end li
-
-//     } //end .navbar-nav
-
-// }
-
-// .about {
-//    background-color: #C57ED3;
-//    color: #490D40;
-//    height: 600px;
-//    text-align: center;
-//    margin-top: -20px;
-
-//    h2 {
-//       padding-top: 220px;
-//    }
-//    p {
-//       padding: 20px 80px;
-//    }
-// }
+.show-side-navbar {
+  transform: translate(0%,0%);
+}
+.show-nav-menu {
+  transform: translate(0%,50px);
+  opacity: 1;
+  visibility: visible;
+  border-radius: 0;
+}

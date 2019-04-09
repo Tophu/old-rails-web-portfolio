@@ -1,19 +1,19 @@
 #push {
-  height: 150px;
+  height: 180px;
 }
 .footer-container {
   clear: both;
+  // position: absolute;
   position: relative;
   bottom: 0;
   width: 100%;
-  height: 150px;
+  height: 60px;
   text-align: center;
-  background-color: #333333;
   padding: 50px;
   color: #6E7179;
   ul {
     padding-left: 0px;
-    margin: 20px 0 0 0;
+    margin: 0 0 0 0;
   }
   li {
     display: inline-block;
