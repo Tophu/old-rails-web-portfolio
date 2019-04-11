@@ -1,12 +1,13 @@
 nav {
   position: relative;
   font-family: 'Roboto',sans-serif;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 }
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+
 .nav-toggle {
   cursor: pointer;
   transition: color 0.2s;
@@ -24,10 +25,11 @@ nav header {
   padding: 0 2rem;
   // box-shadow: 0 2px 10px #333;
   margin: 0 0 8rem 0;
+  i {
+    line-height: 60px!important;
+  }
 }
-nav header i {
-  line-height: 60px!important;
-}
+
 #nav-brand {
   margin-left: 1rem;
   line-height: 60px;
@@ -78,7 +80,6 @@ nav header i {
   opacity: 0;
   transition: opacity 400ms;
 }
-
 .side-navbar {
   position: fixed;
   top: 0;
@@ -92,33 +93,32 @@ nav header i {
   transform: translate(100%, 0%); /* minus goes left & up, positive goes right and down*/
   transition: transform 0.4s;
   z-index: 10;/* this is required so that it stays above navbar wrapper*/
+  i {
+    position: relative;
+    left: 80%;
+    cursor: pointer;
+    top: 10px;
+  }
+  ul {
+    margin-top: 1rem;
+  }
+  li {
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    &:hover {
+      background-color: #333;
+      cursor: pointer;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+      display: block;
+      padding: 0.5rem 1rem;
+    }
+  }
 }
-.side-navbar i {
-  position: relative;
-  left: 80%;
-  cursor: pointer;
-  top: 10px;
-}
-.side-navbar ul {
-  margin-top: 1rem;
-}
-.side-navbar li {
-  font-weight: normal;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  text-align: center;
-}
-.side-navbar li:hover {
-  background-color: #333;
-  cursor: pointer;
-}
-.side-navbar li a {
-  color: inherit;
-  text-decoration: none;
-  display: block;
-  padding: 0.5rem 1rem;
-}
-
 .fade-background {
   visibility: visible;
   opacity: 1;
