@@ -13,3 +13,16 @@ h1, h2, h3{
   font-family: 'Heebo', sans-serif;
   font-weight: 300;
 }
+
+.card-body {
+  border: none;
+  background-color: blue;
+  .card-title {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+  }
+  .card-text {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 300;
+  }
+}
