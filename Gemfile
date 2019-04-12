@@ -29,5 +29,5 @@ group :development, :test do
 end
 
 gem 'bootstrap'
-gem 'cloudinary', '~> 1.9.1'
 gem 'jquery-rails'
+gem 'cloudinary', '~> 1.9.1'
