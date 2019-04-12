@@ -14,15 +14,30 @@ h1, h2, h3{
   font-weight: 300;
 }
 
-.card-body {
-  border: none;
-  background-color: blue;
-  .card-title {
-    font-family: 'Heebo', sans-serif;
-    font-weight: 400;
-  }
-  .card-text {
-    font-family: 'Heebo', sans-serif;
-    font-weight: 300;
+
+.card-deck {
+  .card {
+    // margin: 5px;
+    border: none;
+    background-color: transparent;
+    .card-img-top {
+      &:hover {
+        opacity: 0.6;
+        background-image: url('');
+      }
+    }
+    .card-body {
+      padding: 15px 0;
+      .card-title {
+        font-family: 'Heebo', sans-serif;
+        font-weight: 400;
+        color: #f4f4f4;
+      }
+      .card-text {
+        font-family: 'Heebo', sans-serif;
+        font-weight: 300;
+        color: #f4f4f4;
+      }
+    }
   }
 }
