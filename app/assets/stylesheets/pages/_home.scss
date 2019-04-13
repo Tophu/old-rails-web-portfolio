@@ -49,6 +49,14 @@ h3 {
   }
 }
 
+#video-projects-container {
+  #video_projects_page {
+    #carouselExampleIndicators {
+      z-index: 0;
+    }
+  }
+}
+
 #contact-container {
   a {
     color: #f4f4f4;
