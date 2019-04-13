@@ -18,27 +18,32 @@ h3 {
   color: #18de8d;
 }
 
-.card-deck {
-  .card {
-    // margin: 5px;
-    border: none;
-    background-color: transparent;
-    .card-img-top {
-      &:hover {
-        opacity: 0.6;
+.web-projects-container {
+  a {
+    color: #f4f4f4;
+  }
+  .card-deck {
+    .card {
+      // margin: 5px;
+      border: none;
+      background-color: transparent;
+      .card-img-top {
+        &:hover {
+          opacity: 0.6;
+        }
       }
-    }
-    .card-body {
-      padding: 15px 0;
-      .card-title {
-        font-family: 'Heebo', sans-serif;
-        font-weight: 400;
-        color: #18de8d;
-      }
-      .card-text {
-        font-family: 'Heebo', sans-serif;
-        font-weight: 300;
-        color: #f4f4f4;
+      .card-body {
+        padding: 15px 0;
+        .card-title {
+          font-family: 'Heebo', sans-serif;
+          font-weight: 400;
+          color: #18de8d;
+        }
+        .card-text {
+          font-family: 'Heebo', sans-serif;
+          font-weight: 300;
+          color: #f4f4f4;
+        }
       }
     }
   }
