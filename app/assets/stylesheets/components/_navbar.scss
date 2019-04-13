@@ -1,7 +1,8 @@
 nav {
-  position: relative;
+  position: fixed;
   font-family: 'Heebo', sans-serif;
   font-weight: 300;
+  z-index: 1;
   ul {
     list-style: none;
     margin: 0;
@@ -19,8 +20,9 @@ nav {
 nav header {
   position: relative;
   display: flex;
+  width: 99vw;
   justify-content: space-between;
-  // background-color: rgba(26,26,26,0.5);
+  background-color: rgba(21,22,25,0.8);
   color: #18de8d;
   height: 60px;
   padding: 0 1rem;
