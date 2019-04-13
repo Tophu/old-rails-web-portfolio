@@ -23,5 +23,47 @@
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
     <%= render 'shared/footer' %>
+
+    <!-- jQuery CDN script -->
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+    crossorigin="anonymous">
+    </script>
+
+    <script>
+      $(document).ready(function() {
+        $
+        $('#home_page').show();
+      });
+    </script>
+<!--     <script>
+      $( document ).ready(function() {
+        const fade = (elementId) => {
+          $("#home_container").fadeOut("fast", function() {
+            $("#home_container").html($("#"+elementId).html());
+            $("#home_container").fadeIn("slow");
+          });
+        }
+
+        fade("home_page");
+
+        $("#home").click(function(){
+          fade("home_page");
+        });
+
+        $("#about").click(function(){
+          fade("about_page");
+        });
+
+        $("#contact").click(function(){
+          fade("contact_page");
+        });
+      });
+    </script>
+ -->
+    <!-- Must use underscores for id names otherwise jQuery will not read it -->
+
   </body>
 </html>

@@ -20,7 +20,7 @@ nav header {
   position: relative;
   display: flex;
   justify-content: space-between;
-  background-color: #1a1a1a;
+  // background-color: rgba(26,26,26,0.5);
   color: #18de8d;
   height: 60px;
   padding: 0 1rem;
@@ -85,7 +85,7 @@ nav header {
   top: 0;
   // left: 0;
   right: 0;
-  background-color: rgba(10%, 10%, 10%, 1);
+  background-color: rgba(26, 26, 26, 1);
   color: white;
   padding-bottom: 1rem;
   height: 100vh;
