@@ -32,3 +32,5 @@ sidebarLinks.forEach(link => {
 threeDotMenu.onclick = function() {
   navMenu.classList.toggle('show-nav-menu');
 };
+
+// export { toggleSidebar };
