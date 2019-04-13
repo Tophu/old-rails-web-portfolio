@@ -90,7 +90,7 @@ nav header {
   color: white;
   padding-bottom: 1rem;
   height: 100vh;
-  width: 14%;
+  // width: 14%;
   transform: translate(100%, 0%); /* minus goes left & up, positive goes right and down*/
   transition: transform 0.4s;
   z-index: 10;/* this is required so that it stays above navbar wrapper*/
