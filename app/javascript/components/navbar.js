@@ -1,7 +1,7 @@
 const togglebtns = document.querySelectorAll('.nav-toggle');
 const sideBar = document.querySelector('div.side-navbar');
 const sidebarLinks = document.querySelectorAll('.side-navbar li');
-const threeDotMenu = document.querySelector('div.nav-menu-icon');
+// const threeDotMenu = document.querySelector('div.nav-menu-icon');
 const navMenu = document.querySelector('div.nav-menu');
 const backgroundFader = document.getElementsByClassName('background-fader')[0];
 
@@ -29,8 +29,8 @@ sidebarLinks.forEach(link => {
   };
 });
 
-threeDotMenu.onclick = function() {
-  navMenu.classList.toggle('show-nav-menu');
-};
+// threeDotMenu.onclick = function() {
+//   navMenu.classList.toggle('show-nav-menu');
+// };
 
 // export { toggleSidebar };
