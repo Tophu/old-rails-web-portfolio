@@ -4,6 +4,7 @@ const sidebarLinks = document.querySelectorAll('.side-navbar li');
 // const threeDotMenu = document.querySelector('div.nav-menu-icon');
 const navMenu = document.querySelector('div.nav-menu');
 const backgroundFader = document.getElementsByClassName('background-fader')[0];
+const openLink = document.querySelectorAll('.side-navbar a');
 
 
 function toggleSidebar() {
@@ -22,6 +23,12 @@ backgroundFader.onclick = () => {
 };
 
 // Handle clicks on li element inside navigation sidebar
+// sidebarLinks.forEach(link => {
+//   link.onclick = e => {
+//     e.openLink();
+//   };
+// });
+
 sidebarLinks.forEach(link => {
   link.onclick = e => {
     e.preventDefault();
